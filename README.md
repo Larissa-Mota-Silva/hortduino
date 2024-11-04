@@ -62,7 +62,7 @@ Um aplicativo web simples para monitoramento de plantas que exibe informações 
 
 ## 🖼️ Capturas de Tela
 
-![Plant Tracker](images/screenshot.png)
+![image](https://github.com/user-attachments/assets/32c1918d-8f09-488e-bf16-197f8c198559)
 
 ## 📝 Contribuindo
 
