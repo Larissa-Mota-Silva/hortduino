@@ -66,20 +66,7 @@ Um aplicativo web simples para monitoramento de plantas que exibe informações 
 
 ## 📝 Contribuindo
 
-1. Faça um fork deste repositório.
-2. Crie uma nova branch para suas alterações:
-    ```bash
-    git checkout -b minha-nova-funcionalidade
-    ```
-3. Commit suas alterações:
-    ```bash
-    git commit -m "Adiciona nova funcionalidade"
-    ```
-4. Faça push para a branch:
-    ```bash
-    git push origin minha-nova-funcionalidade
-    ```
-5. Abra um Pull Request para revisão.
+Não aceitamos contribuições externas no momento
 
 ## 📄 Licença
 
