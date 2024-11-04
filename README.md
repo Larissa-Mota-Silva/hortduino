@@ -68,6 +68,3 @@ Um aplicativo web simples para monitoramento de plantas que exibe informações 
 
 Não aceitamos contribuições externas no momento
 
-## 📄 Licença
-
-Este projeto é distribuído sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
