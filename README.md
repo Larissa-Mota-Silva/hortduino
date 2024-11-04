@@ -1,6 +1,6 @@
 # Plant Tracker (HORTDUINO) 🌱
 
-Um aplicativo web simples para monitoramento de plantas que exibe informações sobre umidade e última rega. Este projeto usa HTML, CSS e JavaScript para criar uma interface dinâmica que renderiza as informações de cada planta com base em dados simulados do backend.
+Um aplicativo web simples para monitoramento de plantas que exibe informações sobre umidade e última rega. Este projeto usa HTML, CSS e JavaScript para criar uma interface dinâmica que renderiza as informações de cada planta com base em dados do backend.
 
 ## 📋 Funcionalidades
 
