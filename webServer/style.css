@@ -1,0 +1,121 @@
+/* Importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilo geral */
+body {
+    background-color: #E6E3CC; 
+    color: #4a4a4a; 
+    font-family: "Itim", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+.header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #517348;
+    font-size: 1.3rem;
+}
+
+/* Container Principal */
+.main-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Plantinhas */
+.plant-box {
+    background-color: #C6CFA5;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    width: 250px;
+    height: 360px;
+    margin: 15px;
+    transition: transform 0.3s;
+    display: flex; 
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Alinha os itens no centro */
+    justify-content: flex-end; /* Justifica para o final para manter o vaso na parte inferior */
+}
+
+.plant-box:hover { /* Efeito ao passar o mouse */
+    transform: scale(1.05);
+    background-color: #c5d196;
+}
+
+
+/* Estilo do vaso */
+.pot {
+    width: 60%; /
+    margin-bottom: -10px; /* Ajusta para que o vaso fique na parte inferior do box */
+    z-index: 1; /* Define o vaso como elemento da frente */
+}
+
+/* Estilo das plantas */
+.plants {
+    width: 55%; 
+    margin-top: -140px; /* Ajusta a posição das plantas para que fique sobre o vaso */
+    margin-bottom: 50px;
+    z-index: 0; /* Define a planta como elemento de trás */
+    animation: sway 2s infinite alternate ease-in-out; /* Adiciona a animação */
+}
+
+.plant-info {
+    margin-top: 1rem;
+    color: #012606;
+}
+
+h3{
+    margin-top: 1rem;
+    color: #486740;
+}
+
+/* Ajustes individuais em cada planta */
+.strawberry{
+    width: 65%; 
+    margin-top: -150px;
+    margin-bottom: 66px;
+}
+
+.mint{
+    width: 50%;
+}
+
+.jamelao{
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+/* Define a animação de balanço */
+@keyframes sway { 
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(15deg); }
+}
+
+/* Estilo do rodapé */
+.footer {
+    color: #517348; 
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0 0 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: small;
+}
