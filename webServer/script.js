@@ -6,8 +6,8 @@ $(document).ready(function() {
             dataType: "json",
             success: function(data) {
                 const plantsData = [
-                    { id: 1, type: 'strawberry', humidity: `${data.umidade[0]}%`, lastWatered: `${verifyLastWatering(data.minutos_desde_ultima_rega)}` },
-                    { id: 2, type: 'jamelao', humidity: `${data.umidade[1]}%`, lastWatered: `${verifyLastWatering(data.minutos_desde_ultima_rega)}` }
+                    { id: 1, type: 'strawberry', humidity: `${data.humidity[0]}%`, lastWatered: `${verifyLastWatering(data.minutesLastIrrigation)}` },
+                    { id: 2, type: 'jamelao', humidity: `${data.humidity[1]}%`, lastWatered: `${verifyLastWatering(data.minutesLastIrrigation)}` }
                 ];
                 updatePlants(plantsData);
             },
@@ -62,12 +62,11 @@ $(document).ready(function() {
         });
     }
     
-    // Inicializa a interface com plantas e atualiza os dados periodicamente
     const initialData = [
         { id: 1, type: 'strawberry', humidity: "0%", lastWatered: "agora" },
         { id: 2, type: 'jamelao', humidity: "0%", lastWatered: "agora" }
     ];
     initializePlants(initialData);
-    setInterval(fetchPlantData, 500); // Atualiza a cada minuto
-    fetchPlantData(); // Carrega imediatamente ao iniciar
+    setInterval(fetchPlantData, 500); 
+    fetchPlantData();
 });
